@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>قسم نظم المعلومات الإدارية | الرئيسية</title>
+    <meta
+      name="description"
+      content="الموقع الرسمي لقسم نظم المعلومات الإدارية - كلية إدارة الأعمال - مقرر تطبيقات الويب والتجارة الإلكترونية MIS 312"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="antialiased">
+    <div id="preloader" aria-label="جاري تحميل الصفحة" role="status">
+      <img src="assets/loader.jpeg" alt="مؤشر تحميل" class="h-16 w-16 rounded-full object-cover" />
+    </div>
+
+    <header x-data="{open:false}" class="sticky top-0 z-50 border-b border-indigo-700/15 glass-nav">
+      <div class="container-balanced">
+        <div class="flex items-center justify-between gap-4 py-3">
+          <div class="flex items-center gap-3 min-w-0">
+            <img
+              src="assets/logo.jpeg"
+              alt="شعار كلية إدارة الأعمال"
+              class="h-14 w-14 md:h-16 md:w-16 rounded-xl object-contain bg-white p-1 border border-indigo-700/15"
+            />
+            <div class="min-w-0">
+              <p class="text-sm md:text-base font-extrabold text-indigo-800 leading-6">كلية إدارة الأعمال – صناعة قادة أعمال الغد</p>
+              <p class="text-xs md:text-sm text-violet-700 font-semibold">قسم نظم المعلومات الإدارية</p>
+            </div>
+          </div>
+
+          <button
+            class="md:hidden rounded-lg border border-indigo-700/20 px-3 py-2 text-indigo-800"
+            @click="open = !open"
+            :aria-expanded="open"
+            aria-controls="mobile-menu"
+            aria-label="فتح قائمة التنقل"
+          >
+            ☰
+          </button>
+
+          <nav class="hidden md:flex items-center gap-2 text-sm font-bold" aria-label="القائمة الرئيسية">
+            <a href="index.html" aria-current="page" class="rounded-lg bg-indigo-700 text-white px-4 py-2">الرئيسية</a>
+            <a href="newsletter.html" class="rounded-lg px-4 py-2 text-indigo-800 hover:bg-indigo-50">النشرة نصف السنوية</a>
+            <a href="events.html" class="rounded-lg px-4 py-2 text-indigo-800 hover:bg-indigo-50">الفعاليات</a>
+          </nav>
+        </div>
+      </div>
+
+      <nav
+        id="mobile-menu"
+        x-show="open"
+        x-transition
+        class="md:hidden border-t border-indigo-700/15 bg-white"
+        aria-label="القائمة الرئيسية للجوال"
+      >
+        <div class="container-balanced py-2 space-y-1 text-sm font-bold">
+          <a href="index.html" aria-current="page" class="block rounded-lg bg-indigo-700 text-white px-4 py-2">الرئيسية</a>
+          <a href="newsletter.html" class="block rounded-lg px-4 py-2 text-indigo-800 hover:bg-indigo-50">النشرة نصف السنوية</a>
+          <a href="events.html" class="block rounded-lg px-4 py-2 text-indigo-800 hover:bg-indigo-50">الفعاليات</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="container-balanced pt-10 pb-12 md:pt-14 md:pb-16">
+        <div class="card-base p-6 md:p-10">
+          <p class="inline-flex items-center gap-2 rounded-full bg-indigo-50 px-3 py-1 text-xs font-bold text-violet-700">
+            MIS 312 • الفصل الدراسي الثاني 1447
+          </p>
+          <h1 class="mt-4 text-2xl md:text-4xl leading-tight section-title">منصة قسم نظم المعلومات الإدارية للتواصل، المعرفة، وفرص المستقبل</h1>
+          <p class="mt-4 text-sm md:text-base text-gray-700 leading-8 max-w-3xl">
+            نرحب بطلاب وطالبات القسم في مساحة رقمية حديثة تجمع الأخبار الأكاديمية، قصص النجاح، الفرص المهنية، والفعاليات النوعية ضمن بيئة واضحة وسلسة تدعم التطور المعرفي والمهني.
+          </p>
+          <div class="mt-6">
+            <a href="newsletter.html" class="btn-primary inline-flex">استعرض النشرة نصف السنوية</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="container-balanced pb-14">
+        <h2 class="section-title text-xl md:text-2xl mb-5">أقسام رئيسية</h2>
+        <div class="grid md:grid-cols-3 gap-5">
+          <article class="card-base p-4 card-float transition hover:-translate-y-1">
+            <div class="placeholder-image">صورة رمادية قابلة للاستبدال</div>
+            <h3 class="mt-4 text-lg font-extrabold text-indigo-800">النشرة نصف السنوية</h3>
+            <p class="mt-2 text-sm text-gray-700 leading-7">تغطية قصص الخريجين، فرص التدريب والتوظيف، وأهم أخبار القسم.</p>
+            <a href="newsletter.html" class="mt-4 inline-flex text-sm font-bold text-indigo-700 hover:text-violet-800">استكشف الآن ←</a>
+          </article>
+
+          <article class="card-base p-4 card-float transition hover:-translate-y-1">
+            <div class="placeholder-image">صورة رمادية قابلة للاستبدال</div>
+            <h3 class="mt-4 text-lg font-extrabold text-indigo-800">الفعاليات</h3>
+            <p class="mt-2 text-sm text-gray-700 leading-7">فعاليات حضورية وافتراضية مصممة لربط المعرفة الأكاديمية بسوق العمل.</p>
+            <a href="events.html" class="mt-4 inline-flex text-sm font-bold text-indigo-700 hover:text-violet-800">عرض الفعاليات ←</a>
+          </article>
+
+          <article class="card-base p-4 card-float transition hover:-translate-y-1">
+            <div class="placeholder-image">صورة رمادية قابلة للاستبدال</div>
+            <h3 class="mt-4 text-lg font-extrabold text-indigo-800">خريج الشهر</h3>
+            <p class="mt-2 text-sm text-gray-700 leading-7">نموذج ملهم لخريج متميز يبرز أثر تخصص نظم المعلومات الإدارية مهنياً.</p>
+            <a href="newsletter.html#success-stories" class="mt-4 inline-flex text-sm font-bold text-indigo-700 hover:text-violet-800">اقرأ القصة ←</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="container-balanced pb-16">
+        <h2 class="section-title text-xl md:text-2xl mb-5">إحصاءات مختصرة</h2>
+        <div class="grid sm:grid-cols-3 gap-4">
+          <article class="card-base p-5 text-center">
+            <p class="text-3xl font-extrabold text-indigo-800">420+</p>
+            <h3 class="mt-1 text-sm font-bold text-gray-700">عدد الخريجين</h3>
+          </article>
+          <article class="card-base p-5 text-center">
+            <p class="text-3xl font-extrabold text-indigo-800">185</p>
+            <h3 class="mt-1 text-sm font-bold text-gray-700">عدد فرص العمل</h3>
+          </article>
+          <article class="card-base p-5 text-center">
+            <p class="text-3xl font-extrabold text-indigo-800">36</p>
+            <h3 class="mt-1 text-sm font-bold text-gray-700">عدد الفعاليات</h3>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-violet-900 text-violet-50 py-10">
+      <div class="container-balanced grid md:grid-cols-3 gap-6 text-sm">
+        <section>
+          <h2 class="font-extrabold text-base">قسم نظم المعلومات الإدارية</h2>
+          <p class="mt-2 leading-7 text-violet-100/90">كلية إدارة الأعمال - جامعة طيبة (نمط بصري مستلهم من الهوية المؤسسية).</p>
+        </section>
+        <section>
+          <h2 class="font-extrabold text-base">تواصل معنا</h2>
+          <p class="mt-2">البريد: <a href="mailto:mis@cba.edu.sa" class="underline">mis@cba.edu.sa</a></p>
+        </section>
+        <section>
+          <h2 class="font-extrabold text-base">تابعنا</h2>
+          <div class="mt-3 flex gap-2" aria-label="روابط اجتماعية افتراضية">
+            <span class="social-dot" aria-hidden="true">in</span>
+            <span class="social-dot" aria-hidden="true">X</span>
+            <span class="social-dot" aria-hidden="true">IG</span>
+          </div>
+        </section>
+      </div>
+      <p class="text-center text-xs text-violet-100/80 mt-8">© 2026 قسم نظم المعلومات الإدارية - جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script>
+      window.addEventListener("load", () => {
+        const preloader = document.getElementById("preloader");
+        preloader.classList.add("fade-out");
+        setTimeout(() => preloader.remove(), 500);
+      });
+    </script>
+  </body>
+</html>
