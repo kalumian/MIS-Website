@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>قسم نظم المعلومات الإدارية | النشرة نصف السنوية</title>
+    <title>قسم نظم المعلومات الإدارية | بيانات الخريجين والأخبار</title>
     <meta
       name="description"
-      content="النشرة نصف السنوية لقسم نظم المعلومات الإدارية: قصص نجاح، فرص وظيفية، وأخبار القسم"
+      content="بيانات الخريجين، الإنجازات، التحديات، وفرص العمل والأخبار لقسم نظم المعلومات الإدارية"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,7 +30,7 @@
             <img
               src="assets/logo.jpeg"
               alt="شعار كلية إدارة الأعمال"
-              class="h-14 w-14 md:h-16 md:w-16 rounded-xl object-contain bg-white p-1 border border-indigo-700/15"
+              class="site-logo h-16 w-16 md:h-20 md:w-20 shrink-0"
             />
             <div class="min-w-0">
               <p class="text-sm md:text-base font-extrabold text-indigo-800 leading-6">كلية إدارة الأعمال – صناعة قادة أعمال الغد</p>
@@ -50,7 +50,7 @@
 
           <nav class="hidden md:flex items-center gap-2 text-sm font-bold" aria-label="القائمة الرئيسية">
             <a href="index.html" class="rounded-lg px-4 py-2 text-indigo-800 hover:bg-indigo-50">الرئيسية</a>
-            <a href="newsletter.html" aria-current="page" class="rounded-lg bg-indigo-700 text-white px-4 py-2">النشرة نصف السنوية</a>
+            <a href="newsletter.html" aria-current="page" class="rounded-lg bg-indigo-700 text-white px-4 py-2">البيانات والأخبار</a>
             <a href="events.html" class="rounded-lg px-4 py-2 text-indigo-800 hover:bg-indigo-50">الفعاليات</a>
           </nav>
         </div>
@@ -65,7 +65,7 @@
       >
         <div class="container-balanced py-2 space-y-1 text-sm font-bold">
           <a href="index.html" class="block rounded-lg px-4 py-2 text-indigo-800 hover:bg-indigo-50">الرئيسية</a>
-          <a href="newsletter.html" aria-current="page" class="block rounded-lg bg-indigo-700 text-white px-4 py-2">النشرة نصف السنوية</a>
+          <a href="newsletter.html" aria-current="page" class="block rounded-lg bg-indigo-700 text-white px-4 py-2">البيانات والأخبار</a>
           <a href="events.html" class="block rounded-lg px-4 py-2 text-indigo-800 hover:bg-indigo-50">الفعاليات</a>
         </div>
       </nav>
@@ -73,89 +73,79 @@
 
     <main class="container-balanced py-10 md:py-14 space-y-10">
       <section class="card-base p-6 md:p-8">
-        <p class="text-xs font-bold text-violet-700">إصدار فبراير 2026</p>
-        <h1 class="section-title text-2xl md:text-3xl mt-2">النشرة نصف السنوية لقسم نظم المعلومات الإدارية</h1>
-        <p class="mt-3 text-sm md:text-base text-gray-700 leading-8">ملف رقمي موجز يجمع قصص النجاح، أبرز فرص التدريب والتوظيف، وتحديثات القسم الأكاديمية والمهنية.</p>
+        <p class="text-xs font-bold text-violet-700">تحديث فبراير 2026</p>
+        <h1 class="section-title text-2xl md:text-3xl mt-2">بيانات الخريجين وفرص العمل</h1>
+        <p class="mt-3 text-sm md:text-base text-gray-700 leading-8">محتوى محدث وفق البيانات المعتمدة للخريجين، الإنجازات، التحديات، والأخبار المهنية.</p>
       </section>
 
       <section id="success-stories" class="space-y-4">
-        <h2 class="section-title text-xl md:text-2xl">قصص نجاح الخريجين</h2>
+        <h2 class="section-title text-xl md:text-2xl">بيانات الخريجين</h2>
 
-        <article x-data="{expanded:false}" class="card-base p-5">
-          <div class="flex items-start justify-between gap-4 flex-wrap">
-            <div>
-              <h3 class="font-extrabold text-indigo-800">سارة العتيبي</h3>
-              <p class="text-sm text-gray-700 mt-1">دفعة 2022 • محللة نظم أعمال أولى • شركة الحلول الذكية</p>
-            </div>
-            <button class="text-sm font-bold text-indigo-700" @click="expanded=!expanded" :aria-expanded="expanded">اقرأ المزيد</button>
-          </div>
-          <p class="mt-3 text-sm text-gray-700 leading-7">بدأت رحلتها من مشروع التخرج في تحليل البيانات ثم التحقت ببرنامج تدريبي مكثف في التحول الرقمي.</p>
-          <p x-show="expanded" x-transition class="mt-2 text-sm text-gray-700 leading-7">اليوم تقود سارة مبادرات أتمتة العمليات في المؤسسة، وساهمت في تقليل زمن إنجاز التقارير التشغيلية بنسبة 35% عبر تطبيق حلول ذكاء الأعمال.</p>
+        <article class="card-base p-5">
+          <h3 class="font-extrabold text-indigo-800">زياد طلال مبارك</h3>
+          <ul class="mt-3 space-y-2 text-sm text-gray-700 leading-7">
+            <li><strong>الرقم الجامعي:</strong> 4302095</li>
+            <li><strong>سنة التخرج:</strong> 2025 - دفعة 43</li>
+            <li><strong>التخصص:</strong> نظم معلومات إدارية</li>
+            <li><strong>المسمى الوظيفي:</strong> إدارة امتياز العملاء</li>
+            <li><strong>الشركة:</strong> الماجدية ريزدنس</li>
+            <li><strong>المقر الرئيسي:</strong> الرياض</li>
+          </ul>
+          <p class="mt-3 text-sm text-gray-700 leading-8">أول ما اتخرجت سافرت الرياض واشتغلت في كافيه 3 شهور وبدأت معاهم قبل الافتتاح الرسمي، وبعد 3 أشهر جاني العرض الوظيفي الآخر من الماجدية.</p>
+          <p class="mt-3 text-sm text-gray-700 leading-8"><strong>الإنجاز:</strong> مشروع التخرج كان تصميم موقع إلكتروني لتأجير سيارات (C2C).</p>
+          <p class="mt-3 text-sm text-gray-700 leading-8"><strong>التحديات بعد التخرج:</strong> السعي لبدء الحياة المهنية عبر التقديم على أي شاغر مناسب حتى الوصول للفرصة الأنسب.</p>
         </article>
 
-        <article x-data="{expanded:false}" class="card-base p-5">
-          <div class="flex items-start justify-between gap-4 flex-wrap">
-            <div>
-              <h3 class="font-extrabold text-indigo-800">محمد الحربي</h3>
-              <p class="text-sm text-gray-700 mt-1">دفعة 2021 • أخصائي تطبيقات أعمال • بنك رقمي ناشئ</p>
-            </div>
-            <button class="text-sm font-bold text-indigo-700" @click="expanded=!expanded" :aria-expanded="expanded">اقرأ المزيد</button>
+        <article class="card-base p-5">
+          <h3 class="font-extrabold text-indigo-800">ليان عبدالله الجهني</h3>
+          <ul class="mt-3 space-y-2 text-sm text-gray-700 leading-7">
+            <li><strong>سنة التخرج:</strong> 2025</li>
+            <li><strong>التخصص:</strong> نظم معلومات إدارية</li>
+            <li><strong>المسمى الوظيفي:</strong> ممثل خدمة عملاء</li>
+            <li><strong>الشركة:</strong> STC</li>
+            <li><strong>المدينة:</strong> المدينة المنورة</li>
+          </ul>
+          <p class="mt-3 text-sm text-gray-700 leading-8">بعد التخرج بدأت بكتابة السيرة الذاتية وتعديل ملف لينكدإن، والبحث اليومي في تويتر وتيليجرام عن الوظائف والدورات المطلوبة، مع التقديم المستمر واكتساب دورات من جهات مختلفة.</p>
+          <p class="mt-3 text-sm text-gray-700 leading-8">هذه أول وظيفة بعد التخرج، وتم الوصول لها عبر ترشيح من منصة هدف التابعة لوزارة الموارد البشرية والتنمية الاجتماعية.</p>
+          <p class="mt-3 text-sm text-gray-700 leading-8"><strong>أكبر إنجاز:</strong> مشروع التخرج «رؤى البيانات».</p>
+          <div class="mt-3 text-sm text-gray-700 leading-8">
+            <p><strong>أبرز التحديات:</strong></p>
+            <ul class="list-disc pr-5 mt-1 space-y-1">
+              <li>الموازنة بين الحياة المهنية والاجتماعية.</li>
+              <li>عدم وضوح الصورة حول مهارات سوق العمل المستقبلية.</li>
+              <li>التشتت بين المسارات الوظيفية لتنوع فرص تخصص نظم المعلومات الإدارية.</li>
+              <li>التعامل مع بيئة العمل والشخصيات والظروف المختلفة.</li>
+            </ul>
           </div>
-          <p class="mt-3 text-sm text-gray-700 leading-7">جمع بين مهارات MIS وفهم تجربة المستخدم ليعمل ضمن فريق تطوير المنتجات المالية الرقمية.</p>
-          <p x-show="expanded" x-transition class="mt-2 text-sm text-gray-700 leading-7">قاد محمد مبادرة مواءمة المتطلبات التقنية مع احتياجات الأعمال، وأسهم في إطلاق خدمة جديدة زادت معدل استخدام التطبيق بنسبة 22% خلال ثلاثة أشهر.</p>
         </article>
       </section>
 
       <section class="space-y-4">
-        <h2 class="section-title text-xl md:text-2xl">فرص تدريب وتوظيف</h2>
-        <div class="grid md:grid-cols-2 gap-4">
-          <article class="card-base p-5">
-            <h3 class="font-extrabold text-indigo-800">متدرب تحليل بيانات</h3>
-            <p class="text-sm mt-1 text-gray-700">الجهة: شركة رؤى التقنية • المدينة: الرياض</p>
-            <p class="text-sm mt-2 text-gray-700">المتطلبات: أساسيات SQL، مهارات Excel، فهم لمؤشرات الأداء.</p>
-            <p class="text-xs mt-3 font-bold text-violet-700">آخر موعد: 15 شعبان 1447</p>
-          </article>
-          <article class="card-base p-5">
-            <h3 class="font-extrabold text-indigo-800">أخصائي نظم معلومات إدارية</h3>
-            <p class="text-sm mt-1 text-gray-700">الجهة: مجموعة أعمال الشرق • المدينة: جدة</p>
-            <p class="text-sm mt-2 text-gray-700">المتطلبات: تحليل متطلبات، إعداد تقارير BI، تواصل فعال.</p>
-            <p class="text-xs mt-3 font-bold text-violet-700">آخر موعد: 20 شعبان 1447</p>
-          </article>
-          <article class="card-base p-5">
-            <h3 class="font-extrabold text-indigo-800">متدرب دعم التحول الرقمي</h3>
-            <p class="text-sm mt-1 text-gray-700">الجهة: هيئة تطويرية • النمط: عن بُعد</p>
-            <p class="text-sm mt-2 text-gray-700">المتطلبات: إتقان أدوات التعاون الرقمي، إعداد وثائق العمليات.</p>
-            <p class="text-xs mt-3 font-bold text-violet-700">آخر موعد: 24 شعبان 1447</p>
-          </article>
-          <article class="card-base p-5">
-            <h3 class="font-extrabold text-indigo-800">Junior Business Analyst</h3>
-            <p class="text-sm mt-1 text-gray-700">الجهة: E-Commerce Hub • المدينة: المدينة المنورة</p>
-            <p class="text-sm mt-2 text-gray-700">Requirements: documentation, dashboards, stakeholder communication.</p>
-            <p class="text-xs mt-3 font-bold text-violet-700">Deadline: 28 شعبان 1447</p>
-          </article>
-        </div>
+        <h2 class="section-title text-xl md:text-2xl">فرصة وظيفية</h2>
+        <article class="card-base p-5">
+          <h3 class="font-extrabold text-indigo-800">إعلان توظيف - شركة الماجدية</h3>
+          <p class="text-sm mt-2 text-gray-700 leading-8">تعلن شركة الماجدية عن حاجتها إلى <strong>أخصائي مبيعات</strong>.</p>
+          <div class="mt-3 text-sm text-gray-700 leading-8">
+            <p class="font-bold text-indigo-800">أهم الشروط:</p>
+            <ul class="list-disc pr-5 mt-1 space-y-1">
+              <li>خبرة مبيعات.</li>
+              <li>مؤهل جامعي مناسب.</li>
+              <li>مهارات تواصل وإقناع عالية.</li>
+            </ul>
+          </div>
+          <p class="text-sm mt-3 text-gray-700"><strong>الموقع:</strong> الرياض</p>
+        </article>
       </section>
 
       <section class="space-y-4">
         <div class="flex items-end justify-between gap-3">
           <h2 class="section-title text-xl md:text-2xl">أخبار القسم</h2>
-          <p class="text-xs text-gray-500">يتم التحديث تلقائياً من ملف JSON</p>
+          <p class="text-xs text-gray-500">يتم التحديث تلقائيًا من ملف JSON</p>
         </div>
         <div id="news-grid" class="grid md:grid-cols-3 gap-4" aria-live="polite">
           <article class="card-base p-5">
-            <h3 class="font-extrabold text-indigo-800">اعتماد أكاديمي داخلي</h3>
-            <p class="text-xs text-gray-500 mt-1">01 رجب 1447</p>
-            <p class="text-sm text-gray-700 mt-2">استكمال متطلبات المراجعة الدورية مع توصيات تطوير المقررات الرقمية.</p>
-          </article>
-          <article class="card-base p-5">
-            <h3 class="font-extrabold text-indigo-800">ورشة تحليل البيانات</h3>
-            <p class="text-xs text-gray-500 mt-1">09 رجب 1447</p>
-            <p class="text-sm text-gray-700 mt-2">تنفيذ ورشة تطبيقية حول لوحات المعلومات التفاعلية ومؤشرات الأداء.</p>
-          </article>
-          <article class="card-base p-5">
-            <h3 class="font-extrabold text-indigo-800">شراكة مع جهة تقنية</h3>
-            <p class="text-xs text-gray-500 mt-1">18 رجب 1447</p>
-            <p class="text-sm text-gray-700 mt-2">اتفاقية تعاون لتوفير فرص تدريب تخصصية لطلاب وطالبات القسم.</p>
+            <h3 class="font-extrabold text-indigo-800">جاري تحميل الأخبار</h3>
+            <p class="text-sm text-gray-700 mt-2">يرجى الانتظار...</p>
           </article>
         </div>
       </section>
@@ -169,7 +159,7 @@
         </section>
         <section>
           <h2 class="font-extrabold text-base">تواصل معنا</h2>
-          <p class="mt-2">البريد: <a href="mailto:mis@cba.edu.sa" class="underline">mis@cba.edu.sa</a></p>
+          <p class="mt-2">للتواصل يرجى الرجوع للقنوات الرسمية للقسم.</p>
         </section>
         <section>
           <h2 class="font-extrabold text-base">تابعنا</h2>
